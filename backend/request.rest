@@ -1,0 +1,29 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsIm5hbWUiOiJjaHJ5cyIsImVtYWlsIjoiY2hyeXNAbWFpbC5jb20iLCJpYXQiOjE2ODI4NTczMjMsImV4cCI6MTY4Mjg1NzM0M30.jTXZRajtHJLUWcv8Kt5oOYVUFLY-4zA2dTxufkwvm4Y
+###
+
+
+Content-Type: application/json
+
+{
+    "name" : "chrys",
+    "email" : "chrys@mail.com",
+    "password": "123456",
+    "confPassword":"123456"
+}
+
+###
+POST  http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email" : "chrys@mail.com",
+    "password": "123456"
+}
+
+###
+GET http://localhost:5000/token
+
+
+###
+DELETE  http://localhost:5000/logout
